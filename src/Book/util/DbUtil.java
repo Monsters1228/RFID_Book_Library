@@ -10,7 +10,7 @@ import java.sql.DriverManager;
 public class DbUtil {
     private static String Url="jdbc:mysql://localhost:3306/book?serverTimezone=UTC";
     private static String UserName="root";
-    private static String Password="8826050";
+    private static String Password="huang8826050";
     private static String jdbcName="com.mysql.cj.jdbc.Driver";
 //连接数据库
     public Connection getCon()throws Exception{

@@ -47,12 +47,12 @@ public class Main {
      * Create the application.
      */
     Main() {
+//       初始化界面
+        initialize();
 //        5s后自动停止读取
         autoTime();
 //        打开串口并读取id
         startCom();
-//        初始化界面
-        initialize();
     }
 
     /**
@@ -198,6 +198,9 @@ public class Main {
             public void run() {
                 timeQyery = false;
                 System.out.println("停止读取数据");
+                for(int i=0;i<bookId.size();i++){
+                    System.out.println(bookId.get(i));
+                }
             }
         },5000);
     }
